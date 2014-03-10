@@ -3,6 +3,10 @@ Beginner Guide to Javascript
 
 Syntax / Snippets / Best Design Patterns
 
-
-<code>Hello World</code>
+<h3>Getting the DOM ready</h3>
+<code>
+document.addEventListener("DOMContentLoaded", function() {
+  // Code
+}, false);
+</code>
 
