@@ -1,4 +1,4 @@
-Beginner Guide to Javascript
+Beginners Guide to JavaScript
 ==========
 
 Syntax / Snippets / Best Design Patterns
