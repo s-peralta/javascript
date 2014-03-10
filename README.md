@@ -1,4 +1,4 @@
-javascript
+Beginner Guide to Javascript
 ==========
 
 Beginner JavaScript Guide
