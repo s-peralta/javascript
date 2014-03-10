@@ -1,7 +1,7 @@
 Beginner Guide to Javascript
 ==========
 
-Beginner JavaScript Guide
+Syntax / Snippets / Best Design Pattners
 
 
 <code>Hello World</code>
