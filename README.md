@@ -7,60 +7,27 @@ Syntax / Snippets / Best Design Patterns
 
 
 
-Getting the DOM ready
+Object Literal Notation
 ---------------------
 
 ```
-  document.addEventListener("DOMContentLoaded", function() {
-    // Code
-  }, false);
-```
+var person = {
+firstName:"John",
+lastName:"Doe",
+age:50,
+eyeColor:"blue"
+};
 
-Selectors API
----------------------
-
-```
-  var element = document.querySelector("div");
 ```
 
 OR
 
 ```
-  var elements = document.querySelectorAll(".container div");
-```
-
-Traversing the DOM
----------------------
-
-```
-  // Getting the parent node
-var parent = document.querySelector("div").parentNode;
-
-// Getting the next node
-var next = document.querySelector("div").nextSibling;
-
-// Getting the previous node
-var next = document.querySelector("div").previousSibling;
-
-// Getting the first child element
-var child = document.querySelector("div").children[0];
-
-// Getting the last child
-var last = document.querySelector("div").lastElementChild;
-```
-
-Adding, Removing and Toggling Classes
----------------------
+var person = new Object();
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
 
 ```
-element.classList.add("bar");
 
-// Removing a class
-element.classList.remove("foo");
-
-// Checking if has a class
-element.classList.contains("foo");
-
-// Toggle a class
-element.classList.toggle("active");
-```
