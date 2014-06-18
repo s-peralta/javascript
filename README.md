@@ -29,6 +29,26 @@ return a+b
 plus(2,3) // 5
 ```
 
+Self Invocing Function
+---------------------
+
+```
+(function(){
+
+  // Code get trigger on page load
+  
+})();
+
+OR
+
+(function(a,b){
+
+  return a+b
+  
+})(2,4);
+
+```
+
 Object Literal Notation
 ---------------------
 
