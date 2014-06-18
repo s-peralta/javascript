@@ -24,18 +24,7 @@ Object Constructor
 ---------------------
 
 ```
-var person = new Object();
-person.firstName = "John";
-person.lastName = "Doe";
-person.age = 50;
-person.eyeColor = "blue";
-
-```
-
-OR 
-
-```
-var person = function(){
+var Person = function(){
 this.firstName = "John";
 this.lastName = "Doe";
 this.age = 50;
