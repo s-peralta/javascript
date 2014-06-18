@@ -20,7 +20,8 @@ eyeColor:"blue"
 
 ```
 
-OR
+Object Constructor
+---------------------
 
 ```
 var person = new Object();
@@ -30,4 +31,6 @@ person.age = 50;
 person.eyeColor = "blue";
 
 ```
+
+
 
