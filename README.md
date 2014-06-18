@@ -19,6 +19,7 @@ plus(2,3); // 5
 ```
 
 Function Expression / Function Literal
+---------------------
 
 ```
 var plus = function(a.b){
