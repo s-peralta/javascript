@@ -24,12 +24,21 @@ Object Constructor
 ---------------------
 
 ```
-var Person = function(){
-this.firstName = "John";
-this.lastName = "Doe";
-this.age = 50;
-this.eyeColor = "blue";
-}
+var Person = function(sex, fn, ln){
+  // Properties
+  this.age = 0;
+  this.sex = sex;
+  this.firstname = fn;
+  this.lastname = ln;
+
+  // Methods
+  this.setAge = function(value){
+                  this.age = value;
+  };
+};
+
+var Fred = new Person('male', 'Fred', 'Flintstone');
+Fred.setAge(45
 
 ```
 
