@@ -5,7 +5,28 @@ Beginners Guide to JavaScript
 
 Syntax / Snippets / Best Design Patterns
 
+Function Declaration
+---------------------
 
+```
+function plus(a,b){
+sum=a+b
+return sum
+};
+
+plus(2,3); // 5
+
+```
+
+Function Expression / Function Literal
+
+```
+var plus = function(a.b){
+return a+b
+};
+
+plus(2,3) // 5
+```
 
 Object Literal Notation
 ---------------------
