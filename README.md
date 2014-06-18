@@ -32,5 +32,15 @@ person.eyeColor = "blue";
 
 ```
 
+OR 
 
+```
+var person = function(){
+this.firstName = "John";
+this.lastName = "Doe";
+this.age = 50;
+this.eyeColor = "blue";
+}
+
+```
 
