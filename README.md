@@ -30,6 +30,7 @@ plus(2,3) // 5
 ```
 
 Self Invocing Function
+<i> The trick is to add the "(" before the function and "()" after </i>
 ---------------------
 
 ```
@@ -84,3 +85,19 @@ Fred.setAge(45
 
 ```
 
+Parsing Json
+---------------------
+
+```
+
+var data={
+  "firstName":"Ray",
+  "lastName":"Villalobos",
+  "joined":2012
+};
+
+var placeholder = document.querySelector(".placeholder");
+    placeholder.innerHTML = data.firstName +" "+ data.lastName +" "+ data.joined;
+
+```
+Declare an html element with the "class" attribute of ".placehoder" and the "innerHTML" will inject json object inside of it 
