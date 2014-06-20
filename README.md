@@ -30,8 +30,8 @@ plus(2,3) // 5
 ```
 
 Self Invocing Function
-<i> The trick is to add the "(" before the function and "()" after </i>
 ---------------------
+<i> The trick is to add the "(" before the function and "()" after </i>
 
 ```
 (function(){
