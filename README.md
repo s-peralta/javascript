@@ -101,3 +101,18 @@ var placeholder = document.querySelector(".placeholder");
 
 ```
 Declare an html element with the "class" attribute of ".placehoder" and the "innerHTML" will inject json object inside of it 
+
+```
+var shell = document.querySelector("ul.shell"),
+output = "";
+
+for(var i=0; i < newData.users.length ; i++){
+
+	console.log(newData.users[i].firstName +" "+ newData.users[i].lastName + " -Joined- " + newData.users[i].joined.month + "/" + newData.users[i].joined.day +"/"+ newData.users[i].joined.year);
+
+	output+= "<li>" + newData.users[i].firstName +" "+ newData.users[i].lastName + " -Joined- " + newData.users[i].joined.month + "/" + newData.users[i].joined.day +"/"+ newData.users[i].joined.year + "</li>";
+
+}
+
+shell.innerHTML = output 
+```
