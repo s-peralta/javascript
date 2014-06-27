@@ -120,13 +120,13 @@ shell.innerHTML = output
 
 Canvas
 ---------------------
-
+Resource : http://hop.ie/blog/particles/?utm_source=gamedevjsweekly&utm_medium=email
 ```
 
 var canvas = document.createElement("canvas"); // Create the canvas html element
-var context = canvas.getContext("2d"); // 
+var context = canvas.getContext("2d"); // Define whether canvas will be 2D or 3D
 canvas.width = 500; // Define width
-canvas.height =300; // Define height
+canvas.height =500; // Define height
 document.body.appendChild(canvas); // Throw the canvas node in the body
 
 context.fillRect(0, 0, canvas.width, canvas.height);  //The fillRect method draws a filled rectangle on the canvas. It is used by setting the starting X and Y values in pixels, then the shape to draw. In this case we start the rectangle at the top left corner (0,0) and draw a rectangle
@@ -135,7 +135,41 @@ context.fillRect(0, 0, canvas.width, canvas.height);  //The fillRect method draw
 
 // TIME TO MAKE A BADASS PARTICLE
 context.fillStyle = "white";
-context.fillRect(300, 200, 10, 10); //X , Y , width , height
+context.fillRect(300, 200, 10, 10); // X , Y , width , height
 
+//Canvas includes an arc function that can draw curved shapes, and we can use it to make a round particle.
+//content.arc(x, y, radius, startAngle, endAngle, anticlockwise)
+
+
+// After setting the fill style, draw an arc on the canvas
+context.arc(400, 200, 10, 0, Math.PI*2, true);
+context.fillStyle = "white"; 
+context.fill();
+
+// Let's get some movement going - Set up a position variable 
+var posX = 20,
+posY = 100;
+
+// Draw shapes on the canvas using an interval of 30ms
+
+setInterval(function() {
+
+	posX += 1;
+	posY += 0.25;
+	
+	//This will result in the canvas being redrawn each time, creating what looks like the particle moving across the canvas
+	context.fillStyle = "black";
+	context.fillRect(0,0,canvas.width, canvas.height)
+	
+	// Draw a circle particle on the canvas
+	context.beginPath();
+	context.fillStyle = "white";
+	
+	// After setting the fill style, draw an arc on the canvas
+	context.arc(posX, posY, 10, 0, Math.PI*2, true); 
+	context.closePath();
+	context.fill();
+
+}, 30);
 ```
 
