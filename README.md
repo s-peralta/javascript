@@ -114,5 +114,28 @@ for(var i=0; i < newData.users.length ; i++){
 
 }
 
-shell.innerHTML = output 
+shell.innerHTML = output
+
 ```
+
+Canvas
+---------------------
+
+```
+
+var canvas = document.createElement("canvas"); // Create the canvas html element
+var context = canvas.getContext("2d"); // 
+canvas.width = 500; // Define width
+canvas.height =300; // Define height
+document.body.appendChild(canvas); // Throw the canvas node in the body
+
+context.fillRect(0, 0, canvas.width, canvas.height);  //The fillRect method draws a filled rectangle on the canvas. It is used by setting the starting X and Y values in pixels, then the shape to draw. In this case we start the rectangle at the top left corner (0,0) and draw a rectangle
+
+// When a fillStyle is not specified, it will default to black.
+
+// TIME TO MAKE A BADASS PARTICLE
+context.fillStyle = "white";
+context.fillRect(300, 200, 10, 10); //X , Y , width , height
+
+```
+
